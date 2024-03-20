@@ -26,21 +26,48 @@ body {
   margin-top: 10px;
   cursor: pointer;
 }
-
-.grid-container {
+/*
+  .grid-container {
   display: grid;
   grid-template-columns: 260px 1fr;
   grid-template-rows: 0.2fr 3fr;
   grid-template-areas:
     'sidebar header header header'
     'sidebar main main main';
-  height: 100vh;
+  height: 100vh; 
+} */
+.Container{
+  
+  display: flex;
+  flex-direction: row;
 }
+.Header{
+  display: flex;
+  justify-content: space-between;
+}
+.Headercontainer{
+  margin: 2px;
+  width: 100%;
+  margin-left: 300px;
+}
+.tablehead thead tr th{
+  width: 100px;
+
+}
+.tabledetails tbody tr td{
+  width: 210px;
+}
+.customerdetails{
+  width: 80%;
+  margin-left: 100px;
+}
+
+
 
 /* Header  */
 .header {
   grid-area: header;
-  height: 90px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -105,8 +132,9 @@ p{
 
 /* Sidebar  */
 #sidebar {
-  grid-area: sidebar;
-  height: 100%;
+  width: 300px;
+  position: fixed;
+  height: 100vh;
   background-color: #ccced4;
   overflow-y: auto;
   transition: all 0.5s;

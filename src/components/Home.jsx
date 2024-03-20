@@ -12,6 +12,7 @@ const Home = () => {
                   fontSize: "30px",
                   borderRadius: "50%",
                   marginTop: "100%",
+                  marginRight: "15px",
                   backgroundColor: "rgba(144, 238, 144, 0.5)",
                   color: "green",
                 }}
@@ -30,6 +31,7 @@ const Home = () => {
                   fontSize: "30px",
                   borderRadius: "50%",
                   marginTop: "100%",
+                  marginRight: "15px",
                   backgroundColor: "rgba(144, 238, 144, 0.5)",
                   color: "green",
                 }}
@@ -48,6 +50,7 @@ const Home = () => {
                   fontSize: "30px",
                   borderRadius: "50%",
                   marginTop: "100%",
+                  marginRight: "15px",
                   backgroundColor: "rgba(144, 238, 144, 0.5)",
                   color: "green",
                 }}
@@ -62,26 +65,6 @@ const Home = () => {
         </div>
         <div>
           <p style={{ fontSize: "20px", fontWeight: "bold" }}>All Customers</p>
-          <div style={{ display: "flex", justifyContent: "space-around" }}>
-            <span className="spann">All members</span>
-            <span>
-              <input type="text" placeholder="search" className="spann" />
-            </span>
-            <span className="spann">sort by:</span>
-          </div>
-        </div>
-        <div>
-          <table className="table table-striped table-sm tablehead">
-            <thead>
-              <tr style={{ display: "flex", justifyContent: "space-around" }}>
-                <th scope="col">Customer Name</th>
-                <th scope="col">Company</th>
-                <th scope="col">PhoneNumber</th>
-                <th scope="col">Email</th>
-                <th scope="col">Country</th>
-              </tr>
-            </thead>
-          </table>
         </div>
       </div>
     </>

@@ -10,12 +10,16 @@ import PostListProvider from "./store/store";
 function App() {
   return (
     <PostListProvider>
-      <div className="grid-container">
-        <Header />
+      <div className="Container">
         <Sidebar />
-        <Home />
-        <Customertableheading></Customertableheading>
-        <Customerdetails />
+        <div className="Headercontainer">
+          <Header />
+          <Home />
+          <div className="customerdetails">
+            <Customertableheading></Customertableheading>
+            <Customerdetails />
+          </div>
+        </div>
       </div>
     </PostListProvider>
   );
